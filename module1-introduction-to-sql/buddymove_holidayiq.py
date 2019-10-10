@@ -22,4 +22,5 @@ curs.execute('SELECT COUNT(User_Id) FROM review;').fetchall()
 
 # execute code to find the number of users who reviewed 100+ in both nature
 # and shopping
-curs.execute('SELECT COUNT(DISTINCT "User_Id") FROM review WHERE Nature >= 100 AND Shopping >= 100').fetchall()
+curs.execute('SELECT COUNT(DISTINCT "User_Id") FROM review WHERE Nature >= '
+             '100 AND Shopping >= 100').fetchall()
