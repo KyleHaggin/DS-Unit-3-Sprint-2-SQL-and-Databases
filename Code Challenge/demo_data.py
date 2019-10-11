@@ -37,3 +37,7 @@ print(df.head(3))
 print(curs.execute('SELECT COUNT(*) FROM demo').fetchall())
 print(curs.execute('SELECT COUNT(*) FROM demo WHERE x>=5 AND y>=5').fetchall())
 print(curs.execute('SELECT COUNT(DISTINCT y) FROM demo').fetchall())
+
+# Close and commit
+curs.close()
+conn.commit()
