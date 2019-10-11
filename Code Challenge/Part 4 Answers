@@ -1,0 +1,15 @@
+- In the Northwind database, what is the type of relationship between the
+  `Employee` and `Territory` tables?
+The Territory table and the Employee tables are connected via a one to many relationship.
+Each employee can only have one active Territory but each territory can have many active employees. 
+
+- What is a situation where a document store (like MongoDB) is appropriate, and
+  what is a situation where it is not appropriate?
+Document stores are good if you need to reduce the amount of mapping required using the systems.
+Document stores are also good if you often use certain functions such as median, which are harder to scale in traditional SQL.
+
+- What is "NewSQL", and what is it trying to achieve?
+NewSQL is a reletivly recent attempt to combine the ACID of traditional SQL with the better scaleability of NoSQL.
+While traditional SQL is very good about preserving data through the ACID method, it has trouble in rapidly expanding horizontally.
+NoSQL has better availablilty and scaleability, but at the cost of CAP theorem consistency.
+NewSQL has the potential to greatly reduce both the time and monetary cost of very large or rapidly expanding data systems by combining the benefits of the two systems while limiting the drawbacks.
